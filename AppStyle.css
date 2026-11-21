@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'AppFont';
+    src: url('./AppFont.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+body {
+    font-family: 'AppFont', sans-serif;
+}
+
+.paysetbc {
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 100vh;
+    aspect-ratio: 720 / 1600;
+
+    background-image: url('DisactiveBackground.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.paysetb {
+    position: absolute;
+
+    left: 3.55%;
+    top: 1.25%;
+
+    width: 17.2%;
+    height: 4.4%;
+
+    background: transparent;
+    background-image: url('button.png');
+    border: none;
+    padding: 0;
+    cursor: pointer;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.ol {
+	background-image: url('Background.png');
+	text-align: center;
+	color: #FFFFFF;
+	font-family: 'AppFont', sans-serif;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.psb {
+	background: transparent;
+    background-image: url('ok.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;                  
+    cursor: pointer;          
+    padding: 16px 24px;
+	border: none;
+	transform: translateY(-3px);
+  }
+
+
+.pst {
+    background: transparent;            
+    padding: 8px 12px;        
+    border-radius: 4px;        
+    font-size: 14px;
+	border: 1px solid green;
+	color: #19BB4F;
+}
+
+.pst::placeholder {
+	color: #19BB4F;
+	font-family: 'AppFont', sans-serif;
+}
+  
+.prf {
+	margin-top: 300px;
+}
+
+.pb {
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 5px;
+
+    width: 300px;
+    height: 150px;
+
+    text-decoration: none;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+    box-sizing: border-box;
+	border: 1px solid green;
+}
+
+.l {
+	text-align: center;
+}
+
+.ol2 {
+	background-image: url('success.gif');
+	text-align: center;
+	color: #FFFFFF;
+	font-family: 'AppFont', sans-serif;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.ol3 {
+	background-image: url('smilesuccess.gif');
+	text-align: center;
+	color: #FFFFFF;
+	font-family: 'AppFont', sans-serif;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.pb2 {
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 5px;
+
+    width: 300px;
+    height: 150px;
+
+    text-decoration: none;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+    box-sizing: border-box;
+	border: 1px solid green;
+}
+
+.ol4 {
+	background-image: url('card.gif');
+	text-align: center;
+	color: #FFFFFF;
+	font-family: 'AppFont', sans-serif;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.summ-title {
+    margin: 0 0 10px 0; /* Отступ снизу до суммы */
+}
+
+.summ {
+    display: flex;
+    justify-content: center; /* Центрирует сумму и знак ₽ по горизонтали */
+    align-items: center;     /* Выравнивает их по одной линии по вертикали */
+    gap: 6px;                /* Небольшой пробел между цифрой и ₽ */
+}
+
+.summ p {
+    margin: 0;
+}

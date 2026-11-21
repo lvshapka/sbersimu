@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sberbank Ekvaring</title> 
+    <link rel="stylesheet" href="AppStyle.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="ol2">
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <p>успешно</p>
+ <img src="success.png">
+ <br>
+ <span id="paysumma"></span>₽
+ <audio src="pay.mp3" autoplay loop></audio>
+<script>
+ const params = new URLSearchParams(window.location.search);
+ const summa = params.get("paysumma");
+
+ document.getElementById("paysumma").textContent = summa;
+
+ setTimeout(function() {
+     window.location.href = "index.html";
+ }, 5000);
+ </script>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sberbank Ekvaring</title>
+    <link rel="stylesheet" href="AppStyle.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="ol4">
+ <div class="l">
+  <br>
+  <p class="summ-title">оплата</p>
+  <div class="summ">
+    <span id="paysumma"></span><p>₽</p>
+  </div>
+ </div>
+ <br>
+ <br>
+ <br>
+ <a href="PaymentSuccess.html?paysumma=" class="pb">приложите карту</a>
+ <br>
+ <a href="PaymentSuccessSmile.html?paysumma=" class="pb2">оплата улыбкой</a>
+
+ <script>
+ const params = new URLSearchParams(window.location.search);
+ const summa = params.get("paysumma");
+
+ document.getElementById("paysumma").textContent = summa;
+
+ document.querySelectorAll(".pb").forEach(function(link) {
+     link.href = "PaymentSuccess.html?paysumma=" + summa;
+ });
+ document.querySelectorAll(".pb2").forEach(function(link) {
+	 link.href = "PaymentSuccessSmile.html?paysumma=" + summa;
+ });
+ </script>
+</html>
+
